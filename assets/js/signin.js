@@ -9,7 +9,7 @@ const loginBtn = document.getElementById("signin").onclick = ((e) => {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((userCredentials) => {
             sessionStorage.setItem("uid", userCredentials.user.uid)
-            window.location.href = "../../profile.html"
+            window.location.href = "../../test.html"
         }).catch((error) => {
             swal({
                 title: "Sign In",
