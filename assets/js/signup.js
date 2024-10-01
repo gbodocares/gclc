@@ -41,7 +41,7 @@ const registerBtn = document.getElementById("signup").onclick = ((e) => {
                 icon: "success",
                 button: "Proceed to Dashboard"
             }).then(function () {
-                window.location.href = "../../pages/profile.html"
+                window.location.href = "../../pageset/profile.html"
             })
         }).catch(error => {
             $("#email").css("border-bottom", "solid red 2px")
